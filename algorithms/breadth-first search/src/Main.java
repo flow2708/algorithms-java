@@ -18,19 +18,17 @@ public class Main {
         for (String s : table.get("you")) {
             queue.add(s);
         }
-        String person = queue.pop();
 
         while (!queue.isEmpty()) {
+            String person = queue.pop();
             if (new Main().isMangoSeller(person)) {
                 return true;
-            } else {
-                person = queue.pop();
             }
         }
         return false;
     }
     public boolean isMangoSeller(String name) {
-        if (name == "alice") {
+        if (name.equals("alice")) {
             return true;
         } else {
             return false;
