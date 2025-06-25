@@ -18,7 +18,7 @@ public class Main {
         }
 
         int target = 346;
-        int index = Collections.binarySearc(nums, target);
+        int index = Collections.binarySearch(nums, target);
 
         if (index >= 0) {
             System.out.println("Искомый элемент " + target);
