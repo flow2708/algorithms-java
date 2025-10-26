@@ -17,7 +17,7 @@ public class Main {
             System.out.println(nums.indexOf(num) + ":" + num);
         }
 
-        int target = 346;
+        int target = 345;
         int index = Collections.binarySearch(nums, target);
 
         if (index >= 0) {
